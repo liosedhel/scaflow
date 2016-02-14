@@ -26,7 +26,7 @@ libraryDependencies ++= {
 
 
 scalariformSettings
-coverageEnabled := true
+coverageEnabled in Test := true
 coverageMinimum := 80
 coverageFailOnMinimum := true
 parallelExecution in Test := false
