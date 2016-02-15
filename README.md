@@ -6,12 +6,14 @@
 - Concurrency and scalability
 - Ease of use
 
-*Scaflow* was created as a result of research on the actor concurrency model for designing scientific workflows. 
-Written entirely in Scala using Akka toolkit.
+*Scaflow* was created as a demo and prove of concept for the research titled "USING AN ACTOR FRAMEWORK FOR SCIENTIFIC COMPUTING: OPPORTUNITIES AND CHALLENGES".  
+Is written entirely in Scala using Akka toolkit.
 
 *Scaflow* mantra:
 - Simplicity (Simple API, simple code) couse we believe that simplicity is the key in modern software development
-- Use the right tool for the job 
+- Use the right tool for the job (Scala and Akka are a perfect fit here)
+
+DISCLAIMER: *Scaflow* is not a production ready library (contains, for sure, lots of bugs and other drawbacks). Feel free to contribute :) Also, if you are looking for stable workflow/streaming library/engine written in Scala and Akka look at akka-streams - maybe this is exactly what you need (although akka-streams don't have failure recovery and scalability features).
 
 ##Getting started
 
