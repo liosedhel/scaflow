@@ -12,7 +12,7 @@ import pl.liosedhel.scaflow.ack.StandardAckModel.{ Ack, UniqueMessage }
 import pl.liosedhel.scaflow.blocks.SourceActor.AllDataProcessed
 import pl.liosedhel.scaflow.blocks.map.{ MapMasterActor, MapMasterPersistentActor }
 import pl.liosedhel.scaflow.dsl.PersistentWorkflow
-import pl.liosedhel.scaflow_common.model.Next
+import pl.liosedhel.scaflow.common.model.Next
 
 class SupervisorStrategyTest(_system: ActorSystem)
     extends TestKit(_system)

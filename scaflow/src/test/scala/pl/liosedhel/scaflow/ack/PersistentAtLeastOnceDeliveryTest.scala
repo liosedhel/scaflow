@@ -5,7 +5,7 @@ import akka.persistence.PersistentActor
 import akka.testkit.{ ImplicitSender, TestKit, TestProbe }
 import org.scalatest.{ BeforeAndAfterAll, Matchers, WordSpecLike }
 import pl.liosedhel.scaflow.ack.PersistentAckModel.{ PersistentAck, PersistentUniqueMessage, PersistentAtLeastOnceDelivery }
-import pl.liosedhel.scaflow_common.model.{ Next, NextVal }
+import pl.liosedhel.scaflow.common.model.{ Next, NextVal }
 
 import scala.concurrent.duration.{ FiniteDuration, _ }
 

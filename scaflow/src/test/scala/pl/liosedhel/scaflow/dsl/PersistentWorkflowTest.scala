@@ -5,7 +5,7 @@ import akka.testkit.{ ImplicitSender, TestKit, TestProbe }
 import org.scalatest.{ BeforeAndAfterAll, Matchers, WordSpecLike }
 import pl.liosedhel.scaflow.PersistentWorkflowTests
 import pl.liosedhel.scaflow.blocks.SourceActor.AllDataProcessed
-import pl.liosedhel.scaflow_common.operations.ArithmeticOperations
+import pl.liosedhel.scaflow.common.operations.ArithmeticOperations
 
 import scala.concurrent.duration._
 import scala.util.Random

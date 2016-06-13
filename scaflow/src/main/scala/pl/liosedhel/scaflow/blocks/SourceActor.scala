@@ -6,7 +6,7 @@ import pl.liosedhel.scaflow.ack.AckModel._
 import pl.liosedhel.scaflow.ack.PersistentAckModel.PersistentAtLeastOnceDelivery
 import pl.liosedhel.scaflow.ack.StandardAckModel.StandardAtLeastOnceDelivery
 import pl.liosedhel.scaflow.blocks.SourceActor.{ AllDataProcessed, EndOfData, Start }
-import pl.liosedhel.scaflow_common.model.Next
+import pl.liosedhel.scaflow.common.model.Next
 
 object SourceActor {
   case class Start()

@@ -3,7 +3,7 @@ package pl.liosedhel.scaflow.blocks
 import akka.actor.{ Actor, ActorRef, Props }
 import pl.liosedhel.scaflow.ack.StandardAckModel.StandardAtLeastOnceDelivery
 import pl.liosedhel.scaflow.blocks.SynchronizeActor.Synchronized
-import pl.liosedhel.scaflow_common.model.NextVal
+import pl.liosedhel.scaflow.common.model.NextVal
 
 object SynchronizeActor {
   case class Synchronized[A](override val id: Int, override val data: A) extends NextVal[A]

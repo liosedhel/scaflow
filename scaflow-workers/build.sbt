@@ -11,7 +11,7 @@ resolvers += "Local Ivy Repository" at Path.userHome.asFile.toURI.toURL + ".ivy2
 libraryDependencies ++= {
   val akkaV = "2.4.2"
   Seq(
-    "pl.liosedhel" %% "scaflow-common" % "1.0-SNAPSHOT",
+    "pl.liosedhel" %% "scaflow" % "1.0-SNAPSHOT",
     "com.typesafe.akka" %% "akka-actor" % akkaV,
     "com.typesafe.akka" %% "akka-remote" % akkaV)
 }

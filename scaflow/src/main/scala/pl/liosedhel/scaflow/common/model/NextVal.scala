@@ -1,4 +1,4 @@
-package pl.liosedhel.scaflow_common.model
+package pl.liosedhel.scaflow.common.model
 
 trait NextVal[A] {
   val id: Int

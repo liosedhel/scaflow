@@ -5,7 +5,7 @@ import akka.persistence.PersistentActor
 import pl.liosedhel.scaflow.ack.PersistentAckModel.PersistentAtLeastOnceDelivery
 import pl.liosedhel.scaflow.ack.StandardAckModel.StandardAtLeastOnceDelivery
 import pl.liosedhel.scaflow.blocks.SourceActor.AllDataProcessed
-import pl.liosedhel.scaflow_common.model.NextVal
+import pl.liosedhel.scaflow.common.model.NextVal
 
 object SinkActor {
   def props[A](operation: A => Unit) = Props(new SinkActor[A](operation))

@@ -4,7 +4,7 @@ import akka.actor.ActorSystem
 import akka.testkit.{ ImplicitSender, TestKit, TestProbe }
 import org.scalatest.{ BeforeAndAfterAll, Matchers, WordSpecLike }
 import pl.liosedhel.scaflow.ack.StandardAckModel.UniqueMessage
-import pl.liosedhel.scaflow_common.model.Next
+import pl.liosedhel.scaflow.common.model.Next
 
 class DumbSumOfSquareTest(_system: ActorSystem) extends TestKit(_system) with ImplicitSender with WordSpecLike with Matchers with BeforeAndAfterAll {
 

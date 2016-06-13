@@ -1,10 +1,10 @@
-package pl.liosedhel.scaflow_common.workers
+package pl.liosedhel.scaflow.common.workers
 
 import akka.actor._
-import pl.liosedhel.scaflow_common.model.CommonMasterWorkerModel.Master.{ WorkDone, GiveMeWorkToDo, WorkerCreated }
-import pl.liosedhel.scaflow_common.model.CommonMasterWorkerModel.Worker.{ NoMoreWorkToDo, WorkCompleted, WorkIsReady }
-import pl.liosedhel.scaflow_common.model.NextVal
-import pl.liosedhel.scaflow_common.workers.MapWorkerActor.{ Working, WaitingForJob, Idle, WorkerState }
+import pl.liosedhel.scaflow.common.model.CommonMasterWorkerModel.Master.{ WorkDone, GiveMeWorkToDo, WorkerCreated }
+import pl.liosedhel.scaflow.common.model.CommonMasterWorkerModel.Worker.{ NoMoreWorkToDo, WorkCompleted, WorkIsReady }
+import pl.liosedhel.scaflow.common.model.NextVal
+import pl.liosedhel.scaflow.common.workers.MapWorkerActor.{ Working, WaitingForJob, Idle, WorkerState }
 
 import scala.concurrent.Future
 import scala.util.{ Failure, Success }

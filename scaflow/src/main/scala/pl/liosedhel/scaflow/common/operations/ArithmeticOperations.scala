@@ -1,4 +1,4 @@
-package pl.liosedhel.scaflow_common.operations
+package pl.liosedhel.scaflow.common.operations
 
 import scala.util.Random
 

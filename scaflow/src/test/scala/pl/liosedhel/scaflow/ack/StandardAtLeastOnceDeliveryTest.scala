@@ -6,7 +6,7 @@ import akka.actor.{ Actor, ActorRef, ActorSystem, Props }
 import akka.testkit.{ ImplicitSender, TestKit, TestProbe }
 import org.scalatest.{ BeforeAndAfterAll, Matchers, WordSpecLike }
 import pl.liosedhel.scaflow.ack.StandardAckModel.{ Ack, UniqueMessage, StandardAtLeastOnceDelivery }
-import pl.liosedhel.scaflow_common.model.{ Next, NextVal }
+import pl.liosedhel.scaflow.common.model.{ Next, NextVal }
 
 import scala.concurrent.duration.{ FiniteDuration, _ }
 

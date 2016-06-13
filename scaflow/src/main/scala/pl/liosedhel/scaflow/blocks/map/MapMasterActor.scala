@@ -6,11 +6,11 @@ import akka.routing.RoundRobinPool
 import pl.liosedhel.scaflow.ack.StandardAckModel.StandardAtLeastOnceDelivery
 import pl.liosedhel.scaflow.blocks.map.PullModel.MasterState
 import pl.liosedhel.scaflow.blocks.map.PullModel.MasterState._
-import pl.liosedhel.scaflow_common.model.CommonMasterWorkerModel.Master.{ WorkDone, GiveMeWorkToDo, WorkerCreated }
-import pl.liosedhel.scaflow_common.model.CommonMasterWorkerModel.Worker.{ WorkIsReady, NoMoreWorkToDo }
-import pl.liosedhel.scaflow_common.model.{ Next, NextVal }
+import pl.liosedhel.scaflow.common.model.CommonMasterWorkerModel.Master.{ WorkDone, GiveMeWorkToDo, WorkerCreated }
+import pl.liosedhel.scaflow.common.model.CommonMasterWorkerModel.Worker.{ WorkIsReady, NoMoreWorkToDo }
+import pl.liosedhel.scaflow.common.model.{ Next, NextVal }
 import pl.liosedhel.scaflow.strategy.FailuresStrategies.{ DropMessage, OverridenSupervisorStrategy }
-import pl.liosedhel.scaflow_common.workers.MapWorkerActor
+import pl.liosedhel.scaflow.common.workers.MapWorkerActor
 
 object MapMasterActor {
 

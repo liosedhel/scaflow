@@ -1,4 +1,4 @@
-package pl.liosedhel.scaflow_common.model
+package pl.liosedhel.scaflow.common.model
 
 import akka.actor.ActorRef
 

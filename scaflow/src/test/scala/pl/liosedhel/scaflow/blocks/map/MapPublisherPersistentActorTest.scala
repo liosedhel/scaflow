@@ -4,9 +4,9 @@ import akka.actor._
 import akka.testkit.{ ImplicitSender, TestKit, TestProbe }
 import org.scalatest.{ BeforeAndAfterAll, Matchers, WordSpecLike }
 import pl.liosedhel.scaflow.ack.PersistentAckModel.PersistentUniqueMessage
-import pl.liosedhel.scaflow_common.model.CommonMasterWorkerModel.Master.{ GiveMeWorkToDo, WorkDone, WorkerCreated }
-import pl.liosedhel.scaflow_common.model.CommonMasterWorkerModel.Worker.WorkIsReady
-import pl.liosedhel.scaflow_common.model.Next
+import pl.liosedhel.scaflow.common.model.CommonMasterWorkerModel.Master.{ GiveMeWorkToDo, WorkDone, WorkerCreated }
+import pl.liosedhel.scaflow.common.model.CommonMasterWorkerModel.Worker.WorkIsReady
+import pl.liosedhel.scaflow.common.model.Next
 
 class MapPublisherPersistentActorTest(_system: ActorSystem) extends TestKit(_system) with ImplicitSender with WordSpecLike with Matchers with BeforeAndAfterAll {
 

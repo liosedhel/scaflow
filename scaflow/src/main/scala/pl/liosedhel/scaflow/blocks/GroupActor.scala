@@ -5,7 +5,7 @@ import akka.persistence.PersistentActor
 import pl.liosedhel.scaflow.ack.PersistentAckModel.PersistentAtLeastOnceDelivery
 import pl.liosedhel.scaflow.ack.StandardAckModel.StandardAtLeastOnceDelivery
 import pl.liosedhel.scaflow.blocks.GroupActor.{ DefaultGroupStrategy, GroupStrategy }
-import pl.liosedhel.scaflow_common.model.{ Next, NextVal }
+import pl.liosedhel.scaflow.common.model.{ Next, NextVal }
 
 object GroupActor {
   @SerialVersionUID(1L)

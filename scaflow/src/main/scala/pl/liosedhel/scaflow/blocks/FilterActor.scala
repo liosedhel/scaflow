@@ -4,7 +4,7 @@ import akka.actor.{ Actor, ActorRef, Props }
 import akka.persistence.PersistentActor
 import pl.liosedhel.scaflow.ack.PersistentAckModel.PersistentAtLeastOnceDelivery
 import pl.liosedhel.scaflow.ack.StandardAckModel.StandardAtLeastOnceDelivery
-import pl.liosedhel.scaflow_common.model.NextVal
+import pl.liosedhel.scaflow.common.model.NextVal
 
 object FilterActor {
   def props[A](destination: ActorRef, filter: A => Boolean) = Props(FilterActor(destination, filter))
