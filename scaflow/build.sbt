@@ -3,12 +3,12 @@ organization := "pl.liosedhel"
 
 version := "1.0-SNAPSHOT"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
 resolvers += "Local Ivy Repository" at Path.userHome.asFile.toURI.toURL + ".ivy2/local"
 
 libraryDependencies ++= {
-  val akkaV = "2.4.2"
+  val akkaV = "2.4.7"
   Seq(
     "com.typesafe.akka" %% "akka-actor" % akkaV,
     "com.typesafe.akka" %% "akka-testkit" % akkaV % "test",
@@ -18,7 +18,7 @@ libraryDependencies ++= {
     "org.fusesource.leveldbjni"   % "leveldbjni-all"   % "1.8",
     "org.scalatest" %% "scalatest" % "2.2.6" % "test",
     "org.slf4j" % "slf4j-nop" % "1.7.14",
-    "com.typesafe.akka" %% "akka-persistence-cassandra" % "0.9")
+    "com.typesafe.akka" %% "akka-persistence-cassandra" % "0.16")
 }
 
 scalariformSettings
